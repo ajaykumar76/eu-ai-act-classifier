@@ -1,0 +1,416 @@
+{
+ "_note": "Scenarios and labels written by the project author. 'borderline' means reasonable lawyers could disagree. Tune on split=dev, run split=test once at the end.",
+ "scenarios": [
+  {
+   "id": "S01",
+   "text": "A city deploys a system that scores residents' trustworthiness from their social media posts and shopping habits and uses the score to limit access to public housing.",
+   "gold": "prohibited",
+   "provisions": [
+    "ART5-1c"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S02",
+   "text": "A toy uses hidden audio cues below children's awareness to push them to keep playing and spend money.",
+   "gold": "prohibited",
+   "provisions": [
+    "ART5-1a"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S03",
+   "text": "A call-centre app analyses employees' voices to infer their emotions during shifts and flags 'unhappy' staff for disciplinary review.",
+   "gold": "prohibited",
+   "provisions": [
+    "ART5-1f"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S04",
+   "text": "A company builds a face-recognition database by scraping photos from social media and CCTV footage without consent.",
+   "gold": "prohibited",
+   "provisions": [
+    "ART5-1e"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S05",
+   "text": "A police tool predicts whether a named individual will commit a crime solely from their personality profile and neighbourhood.",
+   "gold": "prohibited",
+   "provisions": [
+    "ART5-1d"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S06",
+   "text": "A school platform infers students' emotional states from webcam video during lessons to grade their engagement.",
+   "gold": "prohibited",
+   "provisions": [
+    "ART5-1f"
+   ],
+   "difficulty": "clear",
+   "split": "test"
+  },
+  {
+   "id": "S07",
+   "text": "A system categorises people from facial images to infer their sexual orientation or political opinions.",
+   "gold": "prohibited",
+   "provisions": [
+    "ART5-1g"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S08",
+   "text": "Live facial recognition cameras in a train station let police identify passers-by in real time against a watch list.",
+   "gold": "prohibited",
+   "provisions": [
+    "ART5-1h"
+   ],
+   "difficulty": "borderline",
+   "split": "test"
+  },
+  {
+   "id": "S09",
+   "text": "A recruitment tool ranks CVs and filters out candidates before a human recruiter sees them.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-4"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S10",
+   "text": "A bank uses a model to decide whether consumers get a loan and to compute their credit score.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-5b"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S11",
+   "text": "A university uses AI to decide which applicants are admitted.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-3"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S12",
+   "text": "An AI system watches students through their webcams during online exams to detect cheating.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-3"
+   ],
+   "difficulty": "clear",
+   "split": "test"
+  },
+  {
+   "id": "S13",
+   "text": "A hospital uses AI to triage patients arriving at its emergency department.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-5d"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S14",
+   "text": "A life insurer uses an algorithm to set premiums from applicants' health data.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-5c"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S15",
+   "text": "A platform allocates tasks to gig workers and evaluates their performance from behaviour data.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-4"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S16",
+   "text": "AI software that is a component of a medical device and diagnoses skin cancer from images.",
+   "gold": "high",
+   "provisions": [
+    "ART6-1"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S17",
+   "text": "A system that controls the safety functions of a regional electricity grid.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-2"
+   ],
+   "difficulty": "clear",
+   "split": "test"
+  },
+  {
+   "id": "S18",
+   "text": "A border authority tool assesses the security risk of travellers entering the country.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-7"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S19",
+   "text": "An assistant for judges that researches case law and suggests how the law applies to the facts of a case.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-8"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S20",
+   "text": "A public agency uses AI to decide whether people are eligible for housing benefits.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-5a"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S21",
+   "text": "An emotion recognition system in a shop infers customers' moods to decide which adverts to show.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-1",
+    "ART50-3"
+   ],
+   "difficulty": "borderline",
+   "split": "dev"
+  },
+  {
+   "id": "S22",
+   "text": "A system decides which users are shown which job adverts, targeting adverts to selected groups.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-4"
+   ],
+   "difficulty": "borderline",
+   "split": "test"
+  },
+  {
+   "id": "S23",
+   "text": "A tool profiles job applicants to predict their personality and ranks them; a recruiter only does a quick formality check of the ranking.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-4"
+   ],
+   "difficulty": "borderline",
+   "split": "dev"
+  },
+  {
+   "id": "S24",
+   "text": "A lie-detection tool that police use during interviews of suspects.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-6"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S25",
+   "text": "Authorities use AI to examine and assess asylum applications.",
+   "gold": "high",
+   "provisions": [
+    "ANX3-7"
+   ],
+   "difficulty": "clear",
+   "split": "test"
+  },
+  {
+   "id": "S26",
+   "text": "A customer-service chatbot on a retail website answers questions about shipping.",
+   "gold": "limited",
+   "provisions": [
+    "ART50-1"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S27",
+   "text": "A tool generates realistic images of people for marketing, and the images are published online.",
+   "gold": "limited",
+   "provisions": [
+    "ART50-2"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S28",
+   "text": "A video app lets users swap faces to create realistic fake celebrity clips and publish them.",
+   "gold": "limited",
+   "provisions": [
+    "ART50-4"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S29",
+   "text": "A news site publishes AI-written articles about local politics with no human editorial review.",
+   "gold": "limited",
+   "provisions": [
+    "ART50-4"
+   ],
+   "difficulty": "borderline",
+   "split": "test"
+  },
+  {
+   "id": "S30",
+   "text": "A voice assistant answers customers' phone calls and never tells them it is a machine.",
+   "gold": "limited",
+   "provisions": [
+    "ART50-1"
+   ],
+   "difficulty": "clear",
+   "split": "test"
+  },
+  {
+   "id": "S31",
+   "text": "A spam filter for a company's email.",
+   "gold": "minimal",
+   "provisions": [
+    "MIN"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S32",
+   "text": "An AI opponent in a video game that adapts to the player's style.",
+   "gold": "minimal",
+   "provisions": [
+    "MIN"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S33",
+   "text": "A warehouse tool that optimises shelf stocking from sales history.",
+   "gold": "minimal",
+   "provisions": [
+    "MIN"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S34",
+   "text": "A grammar-checking plug-in for a word processor.",
+   "gold": "minimal",
+   "provisions": [
+    "MIN"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S35",
+   "text": "A recommendation engine that suggests films to users of a streaming service.",
+   "gold": "minimal",
+   "provisions": [
+    "MIN"
+   ],
+   "difficulty": "clear",
+   "split": "test"
+  },
+  {
+   "id": "S36",
+   "text": "A predictive-maintenance model for factory machines that is not a safety component.",
+   "gold": "minimal",
+   "provisions": [
+    "MIN"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S37",
+   "text": "A tool that only sorts incoming job applications into folders by role for a recruiter, without scoring or ranking candidates.",
+   "gold": "minimal",
+   "provisions": [
+    "ART6-3"
+   ],
+   "difficulty": "borderline",
+   "split": "dev"
+  },
+  {
+   "id": "S38",
+   "text": "A system that flags inconsistencies in an examiner's already-completed grading so the examiner can review them.",
+   "gold": "minimal",
+   "provisions": [
+    "ART6-3"
+   ],
+   "difficulty": "borderline",
+   "split": "test"
+  },
+  {
+   "id": "S39",
+   "text": "An AI system developed and used exclusively for military targeting.",
+   "gold": "out_of_scope",
+   "provisions": [
+    "ART2-mil"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S40",
+   "text": "A university lab trains a prototype classifier solely for scientific research and never deploys it.",
+   "gold": "out_of_scope",
+   "provisions": [
+    "ART2-res"
+   ],
+   "difficulty": "clear",
+   "split": "dev"
+  },
+  {
+   "id": "S41",
+   "text": "A hobbyist uses a photo-sorting AI for their own personal family albums.",
+   "gold": "out_of_scope",
+   "provisions": [
+    "ART2-per"
+   ],
+   "difficulty": "clear",
+   "split": "test"
+  }
+ ]
+}

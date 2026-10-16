@@ -1,0 +1,1228 @@
+{
+ "summary": {
+  "split": "dev",
+  "n": 30,
+  "A_acc": "19/30 (63%)",
+  "retrieval_hit": "25/30 (83%)",
+  "B_acc": "22/30 (73%)",
+  "C_auto": "13/30 (43%)",
+  "C_acc_auto": "11/13 (85%)",
+  "B_errors_caught": "6/8 (75%)"
+ },
+ "rows": [
+  {
+   "id": "S01",
+   "text": "A city deploys a system that scores residents' trustworthiness from their social media posts and shopping habits and uses the score to limit access to public housing.",
+   "gold": "prohibited",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ART5-1c"
+   ],
+   "cands": [
+    [
+     "ART5-1c",
+     0.4210813641548157
+    ],
+    [
+     "ANX3-5b",
+     0.3326030373573303
+    ],
+    [
+     "ANX3-5a",
+     0.30639082193374634
+    ],
+    [
+     "ART5-1g",
+     0.28700917959213257
+    ],
+    [
+     "ART50-3",
+     0.2595778703689575
+    ]
+   ],
+   "A_pred": "prohibited",
+   "B_pred": "prohibited",
+   "citations": [
+    "ART5-1c",
+    "ART5-1g"
+   ],
+   "reasoning": "The system evaluates residents based on social media posts and shopping habits, categorising them and limiting access to public housing, which is a form of detrimental or unfavourable treatment based on social behaviour.",
+   "flags": []
+  },
+  {
+   "id": "S02",
+   "text": "A toy uses hidden audio cues below children's awareness to push them to keep playing and spend money.",
+   "gold": "prohibited",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ART5-1a"
+   ],
+   "cands": [
+    [
+     "ART50-2",
+     0.23244595527648926
+    ],
+    [
+     "ART5-1a",
+     0.22135531902313232
+    ],
+    [
+     "ART50-4",
+     0.20980480313301086
+    ],
+    [
+     "ART50-1",
+     0.20879366993904114
+    ],
+    [
+     "ART5-1f",
+     0.20180517435073853
+    ]
+   ],
+   "A_pred": "limited",
+   "B_pred": "prohibited",
+   "citations": [
+    "id: ART5-1a"
+   ],
+   "reasoning": "The AI system uses subliminal and manipulative techniques to push children to spend money, causing material harm and significant distress.",
+   "flags": [
+    "bad_citation"
+   ]
+  },
+  {
+   "id": "S03",
+   "text": "A call-centre app analyses employees' voices to infer their emotions during shifts and flags 'unhappy' staff for disciplinary review.",
+   "gold": "prohibited",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ART5-1f"
+   ],
+   "cands": [
+    [
+     "ART5-1f",
+     0.38866621255874634
+    ],
+    [
+     "ART50-3",
+     0.374996542930603
+    ],
+    [
+     "ANX3-5d",
+     0.3470686078071594
+    ],
+    [
+     "ANX3-4",
+     0.2755569815635681
+    ],
+    [
+     "ART5-1g",
+     0.22194784879684448
+    ]
+   ],
+   "A_pred": "prohibited",
+   "B_pred": "high",
+   "citations": [
+    "id: ANX3-4",
+    "id: ANX3-5d"
+   ],
+   "reasoning": "The system is high-risk as it involves AI used for employment and worker management, which falls under Annex III point 4, and emergency calls and patient triage, which falls under Annex III point 5(d).",
+   "flags": [
+    "bad_citation",
+    "below_top_retrieved_tier"
+   ]
+  },
+  {
+   "id": "S04",
+   "text": "A company builds a face-recognition database by scraping photos from social media and CCTV footage without consent.",
+   "gold": "prohibited",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ART5-1e"
+   ],
+   "cands": [
+    [
+     "ART5-1e",
+     0.6733594536781311
+    ],
+    [
+     "ANX3-1",
+     0.4542137086391449
+    ],
+    [
+     "ART5-1h",
+     0.4162885546684265
+    ],
+    [
+     "ART50-3",
+     0.3855249881744385
+    ],
+    [
+     "ART5-1g",
+     0.35777056217193604
+    ]
+   ],
+   "A_pred": "prohibited",
+   "B_pred": "prohibited",
+   "citations": [
+    "ART5-1e",
+    "ART5-1g",
+    "ART5-1h"
+   ],
+   "reasoning": "The system builds a face-recognition database through untargeted scraping of facial images from the internet and CCTV footage without consent, which fits the definition of Article 5(1)(e), and also involves biometric categorisation of sensitive attributes (ART5-1g) and real-time remote biometric identification in public for law enforcement (ART5-1h).",
+   "flags": []
+  },
+  {
+   "id": "S05",
+   "text": "A police tool predicts whether a named individual will commit a crime solely from their personality profile and neighbourhood.",
+   "gold": "prohibited",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ART5-1d"
+   ],
+   "cands": [
+    [
+     "ART5-1d",
+     0.664493203163147
+    ],
+    [
+     "ANX3-6",
+     0.4125361442565918
+    ],
+    [
+     "ART5-1g",
+     0.3885154128074646
+    ],
+    [
+     "ART5-1c",
+     0.3238351345062256
+    ],
+    [
+     "ART5-1h",
+     0.3162066340446472
+    ]
+   ],
+   "A_pred": "prohibited",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-6"
+   ],
+   "reasoning": "The AI system is used by law enforcement to assess the risk of becoming a victim, which falls under the Annex III point 6 use case for law enforcement.",
+   "flags": [
+    "below_top_retrieved_tier"
+   ]
+  },
+  {
+   "id": "S07",
+   "text": "A system categorises people from facial images to infer their sexual orientation or political opinions.",
+   "gold": "prohibited",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ART5-1g"
+   ],
+   "cands": [
+    [
+     "ART5-1g",
+     0.5744115114212036
+    ],
+    [
+     "ART50-3",
+     0.5057574510574341
+    ],
+    [
+     "ANX3-1",
+     0.48398399353027344
+    ],
+    [
+     "ART5-1e",
+     0.42065590620040894
+    ],
+    [
+     "ART5-1f",
+     0.4169372320175171
+    ]
+   ],
+   "A_pred": "prohibited",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-1"
+   ],
+   "reasoning": "The system categorises people from facial images to infer their sexual orientation or political opinions, which falls under the definition of biometric categorisation of sensitive attributes in Annex III point 1 of the EU AI Act.",
+   "flags": [
+    "below_top_retrieved_tier"
+   ]
+  },
+  {
+   "id": "S09",
+   "text": "A recruitment tool ranks CVs and filters out candidates before a human recruiter sees them.",
+   "gold": "high",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ANX3-4"
+   ],
+   "cands": [
+    [
+     "ANX3-4",
+     0.35545140504837036
+    ],
+    [
+     "ART50-3",
+     0.3083585500717163
+    ],
+    [
+     "ART5-1d",
+     0.28945374488830566
+    ],
+    [
+     "ART5-1g",
+     0.27531129121780396
+    ],
+    [
+     "ART5-1h",
+     0.2720378637313843
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-4"
+   ],
+   "reasoning": "This AI system is used for recruitment and selection, which falls under Annex III point 4: Employment and worker management. AI used for recruitment and selection (targeted job ads, filtering applications, evaluating candidates), and for decisions on work terms, promotion, termination, task allocation based on behaviour or personal traits, and monitoring and evaluating performance.",
+   "flags": []
+  },
+  {
+   "id": "S10",
+   "text": "A bank uses a model to decide whether consumers get a loan and to compute their credit score.",
+   "gold": "high",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ANX3-5b"
+   ],
+   "cands": [
+    [
+     "ANX3-5b",
+     0.5655291676521301
+    ],
+    [
+     "ART5-1c",
+     0.3166428804397583
+    ],
+    [
+     "ANX3-5a",
+     0.2569584846496582
+    ],
+    [
+     "ART5-1d",
+     0.24278518557548523
+    ],
+    [
+     "ART5-1g",
+     0.24105602502822876
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "high",
+   "citations": [
+    "id: ANX3-5b"
+   ],
+   "reasoning": "The AI system uses a model to decide on loan decisions and compute credit scores, directly implicating Annex III point 5(b) on creditworthiness and credit scoring.",
+   "flags": [
+    "bad_citation"
+   ]
+  },
+  {
+   "id": "S11",
+   "text": "A university uses AI to decide which applicants are admitted.",
+   "gold": "high",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ANX3-3"
+   ],
+   "cands": [
+    [
+     "ANX3-3",
+     0.6210810542106628
+    ],
+    [
+     "ANX3-7",
+     0.5555451512336731
+    ],
+    [
+     "ANX3-4",
+     0.5469655394554138
+    ],
+    [
+     "ART5-1f",
+     0.48889943957328796
+    ],
+    [
+     "ANX3-5b",
+     0.47833091020584106
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-3",
+    "ANX3-7",
+    "ANX3-4",
+    "ANX3-5b"
+   ],
+   "reasoning": "The AI system is used to decide access or admission to education (ANX3-3), assess risks posed by people entering a country (ANX3-7), and evaluate the creditworthiness of applicants (ANX3-5b), all of which imply a high-risk application of AI.",
+   "flags": []
+  },
+  {
+   "id": "S13",
+   "text": "A hospital uses AI to triage patients arriving at its emergency department.",
+   "gold": "high",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ANX3-5d"
+   ],
+   "cands": [
+    [
+     "ANX3-5d",
+     0.8081514835357666
+    ],
+    [
+     "ANX3-7",
+     0.5074807405471802
+    ],
+    [
+     "ANX3-2",
+     0.4952770471572876
+    ],
+    [
+     "ART50-1",
+     0.4811517596244812
+    ],
+    [
+     "ANX3-5a",
+     0.47490793466567993
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-5d",
+    "ANX3-7",
+    "ANX3-2",
+    "ANX3-5a"
+   ],
+   "reasoning": "The AI system is used in emergency calls, patient triage, and evaluation of asylum applications, indicating high-risk applications.",
+   "flags": []
+  },
+  {
+   "id": "S14",
+   "text": "A life insurer uses an algorithm to set premiums from applicants' health data.",
+   "gold": "high",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ANX3-5c"
+   ],
+   "cands": [
+    [
+     "ANX3-5c",
+     0.6577982902526855
+    ],
+    [
+     "ANX3-5a",
+     0.38506001234054565
+    ],
+    [
+     "ANX3-5d",
+     0.3298689126968384
+    ],
+    [
+     "ART50-1",
+     0.2912639081478119
+    ],
+    [
+     "ANX3-7",
+     0.2855529487133026
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "high",
+   "citations": [
+    "id: ANX3-5c",
+    "id: ANX3-5a",
+    "id: ANX3-5d",
+    "id: ANX3-7"
+   ],
+   "reasoning": "The AI system is used for risk assessment and pricing in life and health insurance, which falls under Annex III point 5(c), and also includes evaluation of eligibility for public benefits, emergency calls, and migration/asylum applications, all of which are high-risk use cases.",
+   "flags": [
+    "bad_citation"
+   ]
+  },
+  {
+   "id": "S15",
+   "text": "A platform allocates tasks to gig workers and evaluates their performance from behaviour data.",
+   "gold": "high",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ANX3-4"
+   ],
+   "cands": [
+    [
+     "ANX3-4",
+     0.41511285305023193
+    ],
+    [
+     "ART50-1",
+     0.28961485624313354
+    ],
+    [
+     "ART2-per",
+     0.27740776538848877
+    ],
+    [
+     "ANX3-5d",
+     0.23982399702072144
+    ],
+    [
+     "ART5-1b",
+     0.23442909121513367
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-4",
+    "ANX3-5d"
+   ],
+   "reasoning": "The AI system is used for employment and worker management, which implies high-risk practices according to Annex III point 4 and point 5(d).",
+   "flags": []
+  },
+  {
+   "id": "S16",
+   "text": "AI software that is a component of a medical device and diagnoses skin cancer from images.",
+   "gold": "high",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ART6-1"
+   ],
+   "cands": [
+    [
+     "ART5-1e",
+     0.4434569478034973
+    ],
+    [
+     "ART5-1f",
+     0.41389134526252747
+    ],
+    [
+     "ANX3-7",
+     0.409681111574173
+    ],
+    [
+     "ART50-2",
+     0.3923369348049164
+    ],
+    [
+     "ART5-1g",
+     0.3855631351470947
+    ]
+   ],
+   "A_pred": "prohibited",
+   "B_pred": "high",
+   "citations": [
+    "id: ANX3-7"
+   ],
+   "reasoning": "AI system diagnoses skin cancer from images, and is a component of a medical device, which is a high-risk use case according to Annex III point 7 of the EU AI Act.",
+   "flags": [
+    "bad_citation",
+    "below_top_retrieved_tier"
+   ]
+  },
+  {
+   "id": "S18",
+   "text": "A border authority tool assesses the security risk of travellers entering the country.",
+   "gold": "high",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ANX3-7"
+   ],
+   "cands": [
+    [
+     "ANX3-7",
+     0.5402246713638306
+    ],
+    [
+     "ANX3-6",
+     0.3931238055229187
+    ],
+    [
+     "ART6-3",
+     0.28163132071495056
+    ],
+    [
+     "ART5-1d",
+     0.26953423023223877
+    ],
+    [
+     "ANX3-5c",
+     0.25807851552963257
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "high",
+   "citations": [
+    "id: ANX3-7",
+    "id: ANX3-6",
+    "id: ANX3-5c"
+   ],
+   "reasoning": "The system is used by authorities for migration, law enforcement, and life and health insurance risk assessment, which are Annex III use cases. These categories imply a high risk of bias, discrimination, or misuse.",
+   "flags": [
+    "bad_citation"
+   ]
+  },
+  {
+   "id": "S19",
+   "text": "An assistant for judges that researches case law and suggests how the law applies to the facts of a case.",
+   "gold": "high",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ANX3-8"
+   ],
+   "cands": [
+    [
+     "ANX3-8",
+     0.4458235502243042
+    ],
+    [
+     "ANX3-6",
+     0.4111584424972534
+    ],
+    [
+     "ANX3-7",
+     0.2820591330528259
+    ],
+    [
+     "ANX3-3",
+     0.2794737219810486
+    ],
+    [
+     "ART5-1f",
+     0.264766126871109
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-8",
+    "ANX3-6",
+    "ANX3-7",
+    "ANX3-3"
+   ],
+   "reasoning": "The AI system is used in judicial authorities, law enforcement, migration, education and vocational training, all of which fall under Annex III points 8, 6, 7 and 3, implying it is used for high-risk applications.",
+   "flags": []
+  },
+  {
+   "id": "S20",
+   "text": "A public agency uses AI to decide whether people are eligible for housing benefits.",
+   "gold": "high",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ANX3-5a"
+   ],
+   "cands": [
+    [
+     "ANX3-5a",
+     0.768449068069458
+    ],
+    [
+     "ANX3-7",
+     0.5546030402183533
+    ],
+    [
+     "ANX3-5c",
+     0.5111156702041626
+    ],
+    [
+     "ANX3-5d",
+     0.4940086603164673
+    ],
+    [
+     "ANX3-4",
+     0.48708099126815796
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-5a",
+    "ANX3-4"
+   ],
+   "reasoning": "The AI system is used by a public agency to decide eligibility for housing benefits, which falls under Annex III point 5(a): Eligibility for public benefits and services. Additionally, the system is used for recruitment and selection, and decisions on work terms, promotion, and termination, which aligns with Annex III point 4: Employment and worker management.",
+   "flags": []
+  },
+  {
+   "id": "S21",
+   "text": "An emotion recognition system in a shop infers customers' moods to decide which adverts to show.",
+   "gold": "high",
+   "difficulty": "borderline",
+   "gold_provisions": [
+    "ANX3-1",
+    "ART50-3"
+   ],
+   "cands": [
+    [
+     "ART50-3",
+     0.5688439607620239
+    ],
+    [
+     "ART5-1f",
+     0.5164811611175537
+    ],
+    [
+     "ANX3-1",
+     0.35246509313583374
+    ],
+    [
+     "ART5-1g",
+     0.3019590973854065
+    ],
+    [
+     "ART50-1",
+     0.25787585973739624
+    ]
+   ],
+   "A_pred": "limited",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-1",
+    "ART5-1f"
+   ],
+   "reasoning": "The system qualifies for Annex III point 1 as it involves emotion recognition, and also falls under the prohibition in Article 5(1)(f) as it infers emotions of people in the workplace.",
+   "flags": []
+  },
+  {
+   "id": "S23",
+   "text": "A tool profiles job applicants to predict their personality and ranks them; a recruiter only does a quick formality check of the ranking.",
+   "gold": "high",
+   "difficulty": "borderline",
+   "gold_provisions": [
+    "ANX3-4"
+   ],
+   "cands": [
+    [
+     "ART5-1d",
+     0.45478489995002747
+    ],
+    [
+     "ART5-1g",
+     0.40169835090637207
+    ],
+    [
+     "ANX3-4",
+     0.3777792453765869
+    ],
+    [
+     "ART50-3",
+     0.35044217109680176
+    ],
+    [
+     "ANX3-1",
+     0.3213987350463867
+    ]
+   ],
+   "A_pred": "prohibited",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-4"
+   ],
+   "reasoning": "The AI system is used for recruitment and selection, and for decisions on work terms, promotion, termination, task allocation based on behaviour or personal traits, which falls under Annex III point 4, making it a high-risk system.",
+   "flags": [
+    "below_top_retrieved_tier"
+   ]
+  },
+  {
+   "id": "S24",
+   "text": "A lie-detection tool that police use during interviews of suspects.",
+   "gold": "high",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ANX3-6"
+   ],
+   "cands": [
+    [
+     "ANX3-6",
+     0.41567885875701904
+    ],
+    [
+     "ART5-1h",
+     0.34253621101379395
+    ],
+    [
+     "ART5-1d",
+     0.3419412076473236
+    ],
+    [
+     "ANX3-7",
+     0.31421735882759094
+    ],
+    [
+     "ART5-1g",
+     0.3005094528198242
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "high",
+   "citations": [
+    "id: ANX3-6",
+    "id: ANX3-7"
+   ],
+   "reasoning": "The AI system is used by law enforcement to assess the reliability of evidence and evaluate the risk of offending or re-offending, which falls under Annex III point 6: Law enforcement, and Annex III point 7: Migration, asylum and border control.",
+   "flags": [
+    "bad_citation"
+   ]
+  },
+  {
+   "id": "S26",
+   "text": "A customer-service chatbot on a retail website answers questions about shipping.",
+   "gold": "limited",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ART50-1"
+   ],
+   "cands": [
+    [
+     "ART50-1",
+     0.5177724957466125
+    ],
+    [
+     "ANX3-5d",
+     0.2396875023841858
+    ],
+    [
+     "ANX3-4",
+     0.22251330316066742
+    ],
+    [
+     "ART50-3",
+     0.16794593632221222
+    ],
+    [
+     "ANX3-1",
+     0.16257336735725403
+    ]
+   ],
+   "A_pred": "limited",
+   "B_pred": "limited",
+   "citations": [
+    "id: ART50-1",
+    "id: ART50-3"
+   ],
+   "reasoning": "The chatbot interacts directly with people and complies with Article 50(1) for limited transparency, and the system does not fit any of the Annex III use cases or high-risk components.",
+   "flags": [
+    "bad_citation"
+   ]
+  },
+  {
+   "id": "S27",
+   "text": "A tool generates realistic images of people for marketing, and the images are published online.",
+   "gold": "limited",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ART50-2"
+   ],
+   "cands": [
+    [
+     "ART5-1e",
+     0.3805173933506012
+    ],
+    [
+     "ART50-4",
+     0.3291771113872528
+    ],
+    [
+     "ART5-1h",
+     0.3035339117050171
+    ],
+    [
+     "ART5-1g",
+     0.3000604510307312
+    ],
+    [
+     "ART50-2",
+     0.2968359887599945
+    ]
+   ],
+   "A_pred": "prohibited",
+   "B_pred": "limited",
+   "citations": [
+    "id: ART50-4",
+    "id: ART50-2"
+   ],
+   "reasoning": "The AI system generates realistic images of people for marketing, and the images are published online, which does not involve prohibited practices like untargeted facial image scraping or biometric categorisation of sensitive attributes. It also does not involve high-risk use cases or safety components, only transparency duties apply as it involves deepfakes and synthetic content.",
+   "flags": [
+    "bad_citation",
+    "below_top_retrieved_tier"
+   ]
+  },
+  {
+   "id": "S28",
+   "text": "A video app lets users swap faces to create realistic fake celebrity clips and publish them.",
+   "gold": "limited",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ART50-4"
+   ],
+   "cands": [
+    [
+     "ART5-1e",
+     0.42054837942123413
+    ],
+    [
+     "ART50-4",
+     0.3203360438346863
+    ],
+    [
+     "ART5-1h",
+     0.30054178833961487
+    ],
+    [
+     "ART50-2",
+     0.22550329566001892
+    ],
+    [
+     "ART50-3",
+     0.20831039547920227
+    ]
+   ],
+   "A_pred": "prohibited",
+   "B_pred": "high",
+   "citations": [
+    "ART5-1e",
+    "ART5-1h"
+   ],
+   "reasoning": "The system is high-risk due to its ability to build or expand facial recognition databases through untargeted scraping of facial images (ART5-1e) and perform real-time remote biometric identification in public for law enforcement (ART5-1h), both of which are prohibited practices.",
+   "flags": [
+    "citation_tier_mismatch",
+    "below_top_retrieved_tier"
+   ]
+  },
+  {
+   "id": "S31",
+   "text": "A spam filter for a company's email.",
+   "gold": "minimal",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "MIN"
+   ],
+   "cands": [
+    [
+     "MIN",
+     0.21121641993522644
+    ],
+    [
+     "ART50-1",
+     0.20194727182388306
+    ],
+    [
+     "ANX3-4",
+     0.20157364010810852
+    ],
+    [
+     "ART5-1g",
+     0.16704222559928894
+    ],
+    [
+     "ART6-1",
+     0.1557619273662567
+    ]
+   ],
+   "A_pred": "minimal",
+   "B_pred": "minimal",
+   "citations": [
+    "id: MIN"
+   ],
+   "reasoning": "The AI system is a spam filter, not directly interacting with people and not a safety component, thus falling under the voluntary code of conduct as an 'other AI system'.",
+   "flags": [
+    "bad_citation"
+   ]
+  },
+  {
+   "id": "S32",
+   "text": "An AI opponent in a video game that adapts to the player's style.",
+   "gold": "minimal",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "MIN"
+   ],
+   "cands": [
+    [
+     "ART5-1b",
+     0.4574938416481018
+    ],
+    [
+     "ART5-1f",
+     0.3841373324394226
+    ],
+    [
+     "ANX3-3",
+     0.3770974278450012
+    ],
+    [
+     "ANX3-6",
+     0.37175631523132324
+    ],
+    [
+     "ANX3-8",
+     0.3591615855693817
+    ]
+   ],
+   "A_pred": "prohibited",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-3",
+    "ANX3-6",
+    "ANX3-8"
+   ],
+   "reasoning": "The system adapts to the player's style in a video game, which may involve evaluating the player's behavior and adjusting the difficulty level, potentially fitting Annex III use cases for education and vocational training, law enforcement, and justice and democratic processes.",
+   "flags": [
+    "below_top_retrieved_tier"
+   ]
+  },
+  {
+   "id": "S33",
+   "text": "A warehouse tool that optimises shelf stocking from sales history.",
+   "gold": "minimal",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "MIN"
+   ],
+   "cands": [
+    [
+     "ANX3-4",
+     0.12338666617870331
+    ],
+    [
+     "ANX3-5b",
+     0.10673335939645767
+    ],
+    [
+     "ART2-res",
+     0.07124138623476028
+    ],
+    [
+     "ANX3-5c",
+     0.06825960427522659
+    ],
+    [
+     "ART6-1",
+     0.06128593534231186
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "out_of_scope",
+   "citations": [
+    "id: ART2-6",
+    "id: ART2-8"
+   ],
+   "reasoning": "The AI system is described as a warehouse tool used for optimizing shelf stocking, which is not explicitly excluded by Article 2(6) or 2(8) as a scientific research or pre-market development activity.",
+   "flags": [
+    "bad_citation",
+    "below_top_retrieved_tier"
+   ]
+  },
+  {
+   "id": "S34",
+   "text": "A grammar-checking plug-in for a word processor.",
+   "gold": "minimal",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "MIN"
+   ],
+   "cands": [
+    [
+     "ART50-2",
+     0.2878248989582062
+    ],
+    [
+     "ART6-1",
+     0.22345653176307678
+    ],
+    [
+     "ANX3-8",
+     0.22245727479457855
+    ],
+    [
+     "ANX3-5d",
+     0.2019374668598175
+    ],
+    [
+     "ART2-per",
+     0.1867019236087799
+    ]
+   ],
+   "A_pred": "limited",
+   "B_pred": "limited",
+   "citations": [
+    "ART50-2"
+   ],
+   "reasoning": "The grammar-checking plug-in is not explicitly stated to be a safety component or to influence the outcome of elections, and is likely not covered by EU product-safety legislation, but it is not explicitly excluded from the provision as purely personal non-professional use, so transparency duties apply.",
+   "flags": []
+  },
+  {
+   "id": "S36",
+   "text": "A predictive-maintenance model for factory machines that is not a safety component.",
+   "gold": "minimal",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "MIN"
+   ],
+   "cands": [
+    [
+     "ART6-1",
+     0.33849382400512695
+    ],
+    [
+     "MIN",
+     0.33833110332489014
+    ],
+    [
+     "ART5-1d",
+     0.26560747623443604
+    ],
+    [
+     "ART6-3",
+     0.2488020360469818
+    ],
+    [
+     "ANX3-2",
+     0.23759374022483826
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "minimal",
+   "citations": [
+    "id: MIN"
+   ],
+   "reasoning": "The predictive-maintenance model for factory machines is not a safety component, so it does not fall under Article 6(1) and Annex I, and therefore does not pose a high-risk category. While it may still be subject to other provisions, the MIN provision explicitly covers 'predictive maintenance that is not a safety component', making it a candidate for minimal risk.",
+   "flags": [
+    "bad_citation",
+    "below_top_retrieved_tier"
+   ]
+  },
+  {
+   "id": "S37",
+   "text": "A tool that only sorts incoming job applications into folders by role for a recruiter, without scoring or ranking candidates.",
+   "gold": "minimal",
+   "difficulty": "borderline",
+   "gold_provisions": [
+    "ART6-3"
+   ],
+   "cands": [
+    [
+     "ANX3-4",
+     0.3389372229576111
+    ],
+    [
+     "ART5-1d",
+     0.2651357650756836
+    ],
+    [
+     "ART5-1g",
+     0.18629637360572815
+    ],
+    [
+     "ANX3-7",
+     0.17865976691246033
+    ],
+    [
+     "ANX3-3",
+     0.17539457976818085
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-4",
+    "ANX3-7",
+    "ANX3-3"
+   ],
+   "reasoning": "The system is used for recruitment and sorting of job applications, which aligns with Annex III points 3, 4, and 7, implying a high-risk use case for employment and worker management.",
+   "flags": []
+  },
+  {
+   "id": "S39",
+   "text": "An AI system developed and used exclusively for military targeting.",
+   "gold": "out_of_scope",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ART2-mil"
+   ],
+   "cands": [
+    [
+     "ART2-mil",
+     0.6334904432296753
+    ],
+    [
+     "ANX3-4",
+     0.4738062024116516
+    ],
+    [
+     "ANX3-6",
+     0.47287049889564514
+    ],
+    [
+     "ANX3-2",
+     0.46392035484313965
+    ],
+    [
+     "ART2-per",
+     0.46370241045951843
+    ]
+   ],
+   "A_pred": "out_of_scope",
+   "B_pred": "out_of_scope",
+   "citations": [
+    "ART2-mil",
+    "ART2-per"
+   ],
+   "reasoning": "The AI system is developed and used exclusively for military targeting, which is explicitly excluded from the scope of the Act under Article 2(3) and Article 2(10).",
+   "flags": []
+  },
+  {
+   "id": "S40",
+   "text": "A university lab trains a prototype classifier solely for scientific research and never deploys it.",
+   "gold": "out_of_scope",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ART2-res"
+   ],
+   "cands": [
+    [
+     "ART2-res",
+     0.4115498960018158
+    ],
+    [
+     "ART2-per",
+     0.3060324490070343
+    ],
+    [
+     "ANX3-1",
+     0.2767803966999054
+    ],
+    [
+     "ART5-1g",
+     0.24747011065483093
+    ],
+    [
+     "ART2-mil",
+     0.2395593822002411
+    ]
+   ],
+   "A_pred": "out_of_scope",
+   "B_pred": "out_of_scope",
+   "citations": [
+    "ART2-per",
+    "ART2-mil",
+    "ART2-res"
+   ],
+   "reasoning": "The AI system is solely for scientific research and never deployed, which aligns with Article 2(6) and 2(8) exclusions, and also meets the criteria for Article 2(10) and Article 2(3) exclusions, making it out of scope for the EU AI Act.",
+   "flags": []
+  }
+ ]
+}

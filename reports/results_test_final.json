@@ -1,0 +1,452 @@
+{
+ "summary": {
+  "split": "test",
+  "n": 11,
+  "A_acc": "8/11 (73%)",
+  "retrieval_hit": "9/11 (82%)",
+  "B_acc": "6/11 (55%)",
+  "C_auto": "5/11 (45%)",
+  "C_acc_auto": "4/5 (80%)",
+  "B_errors_caught": "4/5 (80%)"
+ },
+ "rows": [
+  {
+   "id": "S06",
+   "text": "A school platform infers students' emotional states from webcam video during lessons to grade their engagement.",
+   "gold": "prohibited",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ART5-1f"
+   ],
+   "cands": [
+    [
+     "ART5-1f",
+     0.46353796124458313
+    ],
+    [
+     "ART50-3",
+     0.4096371531486511
+    ],
+    [
+     "ANX3-1",
+     0.32197943329811096
+    ],
+    [
+     "ANX3-3",
+     0.29787084460258484
+    ],
+    [
+     "ART50-1",
+     0.2689526379108429
+    ]
+   ],
+   "A_pred": "prohibited",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-1",
+    "ANX3-3"
+   ],
+   "reasoning": "The system uses emotion recognition for remote biometric identification and decision-making in education, which falls under Annex III point 1 and point 3. These provisions indicate a high risk due to the potential for misuse and the need for strict regulations.",
+   "flags": [
+    "below_top_retrieved_tier"
+   ]
+  },
+  {
+   "id": "S08",
+   "text": "Live facial recognition cameras in a train station let police identify passers-by in real time against a watch list.",
+   "gold": "prohibited",
+   "difficulty": "borderline",
+   "gold_provisions": [
+    "ART5-1h"
+   ],
+   "cands": [
+    [
+     "ART5-1h",
+     0.5265404582023621
+    ],
+    [
+     "ART50-3",
+     0.3682536482810974
+    ],
+    [
+     "ANX3-1",
+     0.34819430112838745
+    ],
+    [
+     "ART5-1e",
+     0.34374114871025085
+    ],
+    [
+     "ART5-1g",
+     0.28343117237091064
+    ]
+   ],
+   "A_pred": "prohibited",
+   "B_pred": "prohibited",
+   "citations": [
+    "ART5-1h",
+    "ART5-1e"
+   ],
+   "reasoning": "The system matches Article 5(1)(h) because it uses live facial recognition cameras in a train station for law enforcement, and it also matches Article 5(1)(e) because it builds or expands a facial recognition database through untargeted scraping of facial images from CCTV footage.",
+   "flags": [
+    "prohibited_needs_review"
+   ]
+  },
+  {
+   "id": "S12",
+   "text": "An AI system watches students through their webcams during online exams to detect cheating.",
+   "gold": "high",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ANX3-3"
+   ],
+   "cands": [
+    [
+     "ANX3-3",
+     0.5034811496734619
+    ],
+    [
+     "ANX3-6",
+     0.438107967376709
+    ],
+    [
+     "ART2-per",
+     0.43283912539482117
+    ],
+    [
+     "ANX3-7",
+     0.4047366976737976
+    ],
+    [
+     "ART5-1f",
+     0.3869737386703491
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-3",
+    "ANX3-6",
+    "ANX3-7"
+   ],
+   "reasoning": "The AI system is used to monitor and detect prohibited behaviour during tests, which matches Annex III point 3, and also assesses the risk of offending or re-offending, which matches Annex III point 6. The Act does not apply to purely personal non-professional use (Article 2(10)).",
+   "flags": []
+  },
+  {
+   "id": "S17",
+   "text": "A system that controls the safety functions of a regional electricity grid.",
+   "gold": "high",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ANX3-2"
+   ],
+   "cands": [
+    [
+     "ANX3-2",
+     0.40693408250808716
+    ],
+    [
+     "ART6-1",
+     0.365295946598053
+    ],
+    [
+     "ANX3-5d",
+     0.31365489959716797
+    ],
+    [
+     "ART6-3",
+     0.31333911418914795
+    ],
+    [
+     "MIN",
+     0.29208463430404663
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-2",
+    "ANX3-5d"
+   ],
+   "reasoning": "The system is used in a critical infrastructure (electricity grid), and it directly influences the safety functions of the grid. This meets the criteria for Annex III point 2 and Annex III point 5(d), implying a high-risk tier.",
+   "flags": []
+  },
+  {
+   "id": "S22",
+   "text": "A system decides which users are shown which job adverts, targeting adverts to selected groups.",
+   "gold": "high",
+   "difficulty": "borderline",
+   "gold_provisions": [
+    "ANX3-4"
+   ],
+   "cands": [
+    [
+     "ANX3-4",
+     0.4687117040157318
+    ],
+    [
+     "ART50-1",
+     0.2864413261413574
+    ],
+    [
+     "ART5-1g",
+     0.27113431692123413
+    ],
+    [
+     "ART50-3",
+     0.2463197261095047
+    ],
+    [
+     "ANX3-5a",
+     0.2407185137271881
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-4",
+    "ANX3-5a"
+   ],
+   "reasoning": "The system targets job adverts to selected groups, and uses AI for recruitment and selection, which implies the use of AI for employment and worker management as per Annex III point 4, and AI is used to evaluate eligibility for public benefits and services as per Annex III point 5(a), indicating a high risk use case.",
+   "flags": []
+  },
+  {
+   "id": "S25",
+   "text": "Authorities use AI to examine and assess asylum applications.",
+   "gold": "high",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ANX3-7"
+   ],
+   "cands": [
+    [
+     "ANX3-7",
+     0.7509986162185669
+    ],
+    [
+     "ANX3-5a",
+     0.553815484046936
+    ],
+    [
+     "ANX3-6",
+     0.5391677618026733
+    ],
+    [
+     "ANX3-8",
+     0.4833705723285675
+    ],
+    [
+     "ANX3-5d",
+     0.4799761176109314
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "high",
+   "citations": [
+    "ANX3-7",
+    "ANX3-5d"
+   ],
+   "reasoning": "AI system is used in the context of migration, asylum, and border control (ANX3-7) and emergency healthcare patient triage systems (ANX3-5d), which are high-risk use cases under Annex III of the EU AI Act.",
+   "flags": []
+  },
+  {
+   "id": "S29",
+   "text": "A news site publishes AI-written articles about local politics with no human editorial review.",
+   "gold": "limited",
+   "difficulty": "borderline",
+   "gold_provisions": [
+    "ART50-4"
+   ],
+   "cands": [
+    [
+     "ANX3-8",
+     0.38312986493110657
+    ],
+    [
+     "ART2-per",
+     0.3111325800418854
+    ],
+    [
+     "ART2-res",
+     0.2903785705566406
+    ],
+    [
+     "ART2-mil",
+     0.2899107336997986
+    ],
+    [
+     "MIN",
+     0.2862895727157593
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "out_of_scope",
+   "citations": [
+    "ART2-mil"
+   ],
+   "reasoning": "The AI system is used for a purely personal non-professional activity, as stated in the description: 'no human editorial review' implies the system is used for publication of AI-written articles about local politics. This excludes the Act's obligations as stated in Article 2(10): Exclusion: purely personal non-professional use.",
+   "flags": [
+    "below_top_retrieved_tier"
+   ]
+  },
+  {
+   "id": "S30",
+   "text": "A voice assistant answers customers' phone calls and never tells them it is a machine.",
+   "gold": "limited",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ART50-1"
+   ],
+   "cands": [
+    [
+     "ART50-1",
+     0.3770376741886139
+    ],
+    [
+     "ART2-per",
+     0.3240787982940674
+    ],
+    [
+     "ANX3-5d",
+     0.2929498851299286
+    ],
+    [
+     "ANX3-1",
+     0.24773044884204865
+    ],
+    [
+     "ART5-1e",
+     0.21468234062194824
+    ]
+   ],
+   "A_pred": "limited",
+   "B_pred": "out_of_scope",
+   "citations": [
+    "ART2-per"
+   ],
+   "reasoning": "The description mentions a purely personal, non-professional use of the AI system, which is explicitly excluded from the scope of the Act according to Article 2(10).",
+   "flags": [
+    "below_top_retrieved_tier"
+   ]
+  },
+  {
+   "id": "S35",
+   "text": "A recommendation engine that suggests films to users of a streaming service.",
+   "gold": "minimal",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "MIN"
+   ],
+   "cands": [
+    [
+     "ART50-4",
+     0.2806008458137512
+    ],
+    [
+     "ART50-1",
+     0.27702265977859497
+    ],
+    [
+     "ART5-1d",
+     0.2415250539779663
+    ],
+    [
+     "ANX3-4",
+     0.23007988929748535
+    ],
+    [
+     "ART5-1e",
+     0.22952543199062347
+    ]
+   ],
+   "A_pred": "limited",
+   "B_pred": "limited",
+   "citations": [
+    "ART50-4",
+    "ART50-1"
+   ],
+   "reasoning": "The recommendation engine does not interact with people in a way that requires disclosure (ART50-1), and it does not perform criminal offence risk prediction from profiling alone (prohibited practice), nor does it build or expand facial recognition databases (prohibited practice). Its purpose is to suggest films, which is a legitimate and transparent use of the AI system.",
+   "flags": []
+  },
+  {
+   "id": "S38",
+   "text": "A system that flags inconsistencies in an examiner's already-completed grading so the examiner can review them.",
+   "gold": "minimal",
+   "difficulty": "borderline",
+   "gold_provisions": [
+    "ART6-3"
+   ],
+   "cands": [
+    [
+     "ANX3-5b",
+     0.2921815812587738
+    ],
+    [
+     "ART6-3",
+     0.26660001277923584
+    ],
+    [
+     "ANX3-3",
+     0.25992581248283386
+    ],
+    [
+     "ANX3-6",
+     0.25671544671058655
+    ],
+    [
+     "ART2-per",
+     0.24957221746444702
+    ]
+   ],
+   "A_pred": "high",
+   "B_pred": "minimal",
+   "citations": [
+    "ART6-3"
+   ],
+   "reasoning": "The system is used for a narrow procedural task and improves the result of a previously completed human activity, as it flags inconsistencies in examiner's grading, without replacing or influencing the human assessment or profiling people.",
+   "flags": [
+    "below_top_retrieved_tier"
+   ]
+  },
+  {
+   "id": "S41",
+   "text": "A hobbyist uses a photo-sorting AI for their own personal family albums.",
+   "gold": "out_of_scope",
+   "difficulty": "clear",
+   "gold_provisions": [
+    "ART2-per"
+   ],
+   "cands": [
+    [
+     "ART2-per",
+     0.3417443633079529
+    ],
+    [
+     "ART5-1g",
+     0.3312939405441284
+    ],
+    [
+     "ART50-4",
+     0.32895779609680176
+    ],
+    [
+     "ANX3-7",
+     0.32263195514678955
+    ],
+    [
+     "ART5-1f",
+     0.30818289518356323
+    ]
+   ],
+   "A_pred": "out_of_scope",
+   "B_pred": "minimal",
+   "citations": [
+    "ART50-4"
+   ],
+   "reasoning": "The use of the photo-sorting AI for personal family albums does not match the provisions related to prohibited practices (ART5-1g, ART5-1f) or high-risk use cases (ANX3-7), and the limited provision on deepfakes (ART50-4) only applies to AI-generated public-interest text, not personal use.",
+   "flags": [
+    "citation_tier_mismatch"
+   ]
+  }
+ ]
+}
